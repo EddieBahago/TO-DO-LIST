@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="style.css" />
+    <title>TO-DO-LIST</title>
+  </head>
+  <body>
+    <div id="grid-wrapper">
+      <div class="task-list">
+        <h2 id="all-tasks">All Tasks</h2>
+        <h2 id="today">Today</h2>
+        <h2 id="week">Week</h2>
+        <br>
+        <h2 class="add-new-task">Add task</h2>
+        <h2 class="clear-tasks">Clear Done Tasks</h2>
+      </div>
+      <div class="todolist">
+        
+        <form id="task-form">
+          <label for="title">Title:</label><br />
+          <input
+            type="text"
+            id="title"
+            name="title"
+            maxlength="30"
+            required
+          /><br />
+          <label for="description">Description:</label><br />
+          <input
+            type="text"
+            id="description"
+            name="description"
+            maxlength="100"
+          /><br />
+          <label for="priority">Priority:</label><br />
+          <select name="priority" id="priority">
+            <option value="none">none</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+            <br>
+          <br />
+          <label for="due-date">Due Date:</label><br />
+          <input type="date" id="due-date" name="due-date" />
+          <br />
+          <span id="check-button">✅</span>
+          <span id="cancel-button">❌</span>
+        </form>
+        <table id="tasks"></table>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <footer>EddieBahago - TO-Do-LIST</footer>
+    <div></div>
+  </body>
+</html>
